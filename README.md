@@ -1,2 +1,1 @@
-# notes
-Notebook while self studying
+# Notes
