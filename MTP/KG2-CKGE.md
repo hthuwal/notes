@@ -15,7 +15,7 @@
 |IR-Google | 21.58|
 |IR-ARC | 20.26|
 
-- Using Google Search API to slect the answer option with most hits doesn't even crosses the Guess-all/Random baseline. 
+- Using Google Search API to select the answer option with most hits doesn't even crosses the Guess-all/Random baseline. 
 - TODO: Does this mean collecting more senetences won't help?
 - Hypothesis *h<sub>i</sub> = question + a<sub>i</sub>*
 - Knowledge Graph
@@ -61,3 +61,5 @@
 ![](difficulty_distribution_in_ARC.png)
 
 - Estimated upper bound: Correctly answer all learnable questions, and randomly guess others: **36.25%**. If this is the case curating more data might help.
+- 51% difficulty is due to insufficient support. Use different method to find support sentences?
+- May be try better method to extract triples? Sentence Parsing instead of Open IE?
