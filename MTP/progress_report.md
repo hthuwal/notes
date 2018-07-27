@@ -1,7 +1,8 @@
 ## Update: 27th July 2018
 - Source code is not available for: [KG<sup>2</sup>: 31.70%](https://arxiv.org/pdf/1805.12393.pdf) paper.
-- Its been 3 days since I contacted the authors asking whether they are planning to opensource the code or not.
-- Haven't received any reply yet
+- ~~Its been 3 days since I contacted the authors asking whether they are planning to opensource the code or not.~~
+- ~~Haven't received any reply yet~~
+- One of the authors replied: **The current paper is preliminary, and they are still working on it. They'll release the code after they submit a formal paper to some venue**
 - Meanwhile doing error analysis of DGEM-OpenIE
 
 ## Update: 23rd July 2018
