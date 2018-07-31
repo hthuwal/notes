@@ -1,9 +1,21 @@
+## Update: 1st Aug 2018
+- DGEM
+	- DGEM model: Ran for all the questions and collected the results in a [spreadsheet](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing).
+	- Going through each question and the corresponding options and support manually.
+	- Check if analysis is similar to the analysis done in KG<sup>2</sup> paper.
+
+- New Paper [KG<sup>2</sup>](https://arxiv.org/pdf/1805.12393.pdf)
+	- Claims: 31.70% on challenge set.
+	- Claims: 51% difficulty in choosing correct answer is due to insufficient support.
+		- **_Can use definitions here along with the provided dataset._**
+		- **_Use something other than elastic search to find bettersupport sentences._**
+	- Source code: One of the authors of the paper replied that **The current paper is preliminary, and they are still working on it. They'll release the code after they submit a formal paper to some venue.**
+
 ## Update: 27th July 2018
 - Source code is not available for: [KG<sup>2</sup>: 31.70%](https://arxiv.org/pdf/1805.12393.pdf) paper.
 - ~~Its been 3 days since I contacted the authors asking whether they are planning to opensource the code or not.~~
 - ~~Haven't received any reply yet~~
-- One of the authors replied: **The current paper is preliminary, and they are still working on it. They'll release the code after they submit a formal paper to some venue**
-- Meanwhile doing error analysis of DGEM-OpenIE
+- ~~Meanwhile running DGEM-OpenIE~~
 
 ## Update: 23rd July 2018
 
@@ -195,7 +207,7 @@ Basically removes most of the factoid questions(more likely to be present in the
 
 - q + a<sub>i</sub> = hypothesis(h<sub>i</sub>). 
 - Use h<sub>i</sub> as search query to retriev sentences(elasticsearch?) t<sub>ij</sub>.
-- Calculate entailment scores between a<sub>i</sub> and h<sub>ij</sub>
+- Calculate entailment scores between h<sub>i</sub> and t<sub>ij</sub>
 - Report a<sub>i</sub> with maximum overall entailment score.
 
 &nbsp; **Original Idea**
