@@ -1,3 +1,27 @@
+## Update 17th Aug 2018
+Frequency of Named Entities in the respective datasets is now in the [spreadsheet.](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing). 
+
+- Comparison of the three corpuses
+
+	|Name|Number_of_lines|freq = 0|freq < thresh|
+	|----|---------------|-------|-------|
+	|ARC|14621856|0.14%|21.8% < 100, 15% < 1000|
+	|webchild|177801|6.2%|26.13% < 10|
+	|ncert-6-7-8-9-10|90110|22.15%|29.29% < 1|
+
+
+## Update 14th Aug 2018
+- Downloaded NCERT 6th to 10th pdf science books online.
+- Performed StanfordNER on all the questions/options in the challenge set.
+	+  5045 unique named_entities
+- Setup environment on aryabhatta. Debugged elasticsearch as several elasticsearch instances were already running by other users.
+
+## Update 7th Aug 2018
+1. Preliminary analysis shows that the major bottleneck is the discovery of good support sentences. Because in majority of the cases the extracted support sentences do not contain enough information to find the correct answer.
+2. Tried Using **Webchilds hasproperty triplets** + original corpus -> Again "support sentences seems to be the bottleneck"
+3. DGEMs 27% result is based on properitery IE software (not opensource)
+4. The new papers result although seem amazing but since code is not available is not verifiable.
+
 ## Update: 1st Aug 2018
 - DGEM
 	- DGEM model: Ran for all the questions and collected the results in a [spreadsheet](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing).
