@@ -1,4 +1,62 @@
-## Update 17th Aug 2018
+## 27th Aug 2018
+
+
+#### WebChild Contains several [corpus files](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/)
+
+- **WebChildAll** Cleaned/Parsed and merged them into a single more comprehensive file.
+	+ [nouns.gloss](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/)
+		* contains: (word, possible_meanigs list)
+		* converted to: `word is meaning`
+	+ [Partwhole](http://people.mpi-inf.mpg.de/~ntandon/resources/readme-partwhole.html)
+		* **physical_of**
+			- contains: (worda, wordb)
+			- converted: `worda is part of wordb`
+		* **substance_of**
+			- contains: (worda, wordb)
+			- converted: `worda has subtance wordb in it`
+		* **member_of**
+			- contains: (worda, wordb)
+			- converted: `worda is a member of wordb`
+	+ [comparative](http://people.mpi-inf.mpg.de/~ntandon/resources/readme-comparative.html)
+		* contains: *worda*, comparison phrase, wordb. 
+		* converted: `car is faster than bike`
+
+	+ [property](http://people.mpi-inf.mpg.de/~ntandon/resources/readme-property.html)
+		* contains: word, property, value | e.g. plant, color, green
+		* converted: `plant has green color` and `plant is green`
+	
+	+ [spatial](http://people.mpi-inf.mpg.de/~ntandon/resources/readme-spatial.html)
+		* contains: worda, wordb, list of spatial relations
+		* converted: e.g `spine is around the muscle`, `spine is next to the muscle`, `spine is along the muscle`  
+
+<br>
+	
+- Even using the entire cumulative webchild dataset as corpus seems to only degrade the performance.
+- Why? Use the database differently?
+
+|Corpuses_Used|Accuracy on Challenge Test set|
+|:-----------:|:----------------------------:|
+|ARC|26.41%|
+|WebChildAll|20.44%|
+|ARC+ WebChildAll|26.05%|
+
+----
+
+- Adding the noun definitions from the Web Child decreases the overall total score. Why?
+- Probably because WebChild corpus size is too small?
+- NCERT dataset on the otherhand seem to have no effect.
+- ~~TODO Manual Analysis~~
+
+|Corpuses_Used|Accuracy on Challenge Test set|
+|:-----------:|:----------------------------:|
+|ARC|26.41%|
+|NCERT|22.99%|
+|NounGloss(WebChild)|22.69%|
+|ARC + NCERT|26.41%|
+|ARC + NounGloss(WebChild)|26.20%|
+|ARC + NCERT + NounGloss(WebChild)|26.20%|
+
+## 17th Aug 2018
 Frequency of Named Entities in the respective datasets is now in the [spreadsheet.](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing). 
 
 - Comparison of the three corpuses
@@ -10,19 +68,19 @@ Frequency of Named Entities in the respective datasets is now in the [spreadshee
 	|ncert-6-7-8-9-10|90110|22.15%|29.29% < 1|
 
 
-## Update 14th Aug 2018
+## 14th Aug 2018
 - Downloaded NCERT 6th to 10th pdf science books online.
 - Performed StanfordNER on all the questions/options in the challenge set.
 	+  5045 unique named_entities
 - Setup environment on aryabhatta. Debugged elasticsearch as several elasticsearch instances were already running by other users.
 
-## Update 7th Aug 2018
+## 7th Aug 2018
 1. Preliminary analysis shows that the major bottleneck is the discovery of good support sentences. Because in majority of the cases the extracted support sentences do not contain enough information to find the correct answer.
 2. Tried Using **Webchilds hasproperty triplets** + original corpus -> Again "support sentences seems to be the bottleneck"
 3. DGEMs 27% result is based on properitery IE software (not opensource)
 4. The new papers result although seem amazing but since code is not available is not verifiable.
 
-## Update: 1st Aug 2018
+##  1st Aug 2018
 - DGEM
 	- DGEM model: Ran for all the questions and collected the results in a [spreadsheet](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing).
 	- Going through each question and the corresponding options and support manually.
@@ -35,13 +93,13 @@ Frequency of Named Entities in the respective datasets is now in the [spreadshee
 		- **_Use something other than elastic search to find bettersupport sentences._**
 	- Source code: One of the authors of the paper replied that **The current paper is preliminary, and they are still working on it. They'll release the code after they submit a formal paper to some venue.**
 
-## Update: 27th July 2018
+## 27th July 2018
 - Source code is not available for: [KG<sup>2</sup>: 31.70%](https://arxiv.org/pdf/1805.12393.pdf) paper.
 - ~~Its been 3 days since I contacted the authors asking whether they are planning to opensource the code or not.~~
 - ~~Haven't received any reply yet~~
 - ~~Meanwhile running DGEM-OpenIE~~
 
-## Update: 23rd July 2018
+## 23rd July 2018
 
 ### New Paper Published: [KG<sup>2</sup>](https://arxiv.org/pdf/1805.12393.pdf)
 
@@ -85,14 +143,14 @@ Frequency of Named Entities in the respective datasets is now in the [spreadshee
 - [ ] See if the errors can be reduced using WordNet, WebChild or changes in the architecture.
 
 
-## Update: 16th July 2018
+## 16th July 2018
 Back to work
 ## June 15 to June 29
 Family Trip
 ## June 05 to June 12
 Went to hometown
 
-### Update: 30-05-2018
+### 30-05-2018
 ### TL;DR
 
 **1. Papers Read**
