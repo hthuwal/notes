@@ -3,7 +3,7 @@
 
 #### WebChild Contains several [corpus files](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/)
 
-- **WebChildAll** Cleaned/Parsed and merged them into a single more comprehensive file.
+- **WebChildAll:** Cleaned/Parsed and merged them into a single more comprehensive file.
 	+ [nouns.gloss](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/)
 		* contains: (word, possible_meanigs list)
 		* converted to: `word is meaning`
@@ -30,7 +30,18 @@
 		* converted: e.g `spine is around the muscle`, `spine is next to the muscle`, `spine is along the muscle`  
 
 <br>
-	
+
+### An Observation:
+- Question Wise scenarios for all these scenarios are updated in the [spreadsheet.](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing). 
+- If NCERT and Web_child datasets are used independently that is without the ARC dataset:
+	+ We answer 14.42% questions with better scores.
+	+ But when used in conjunctio with ARC dataset, the score
+		* stays same for ARC + NCERT
+		* decreases for ARC + WebChild
+- Can we use the other corpus indirectly so that their effects contribute to the final score?
+
+---
+
 - Even using the entire cumulative webchild dataset as corpus seems to only degrade the performance.
 - Why? Use the database differently?
 
@@ -45,7 +56,6 @@
 - Adding the noun definitions from the Web Child decreases the overall total score. Why?
 - Probably because WebChild corpus size is too small?
 - NCERT dataset on the otherhand seem to have no effect.
-- ~~TODO Manual Analysis~~
 
 |Corpuses_Used|Accuracy on Challenge Test set|
 |:-----------:|:----------------------------:|
