@@ -1,4 +1,7 @@
 ## 27th Aug 2018
+
+TODO: Go through: A [new relevant paper](https://arxiv.org/abs/1806.00358) that uses ARC dataset.
+
 #### Manual Analysis
 Some Questions with zero score and for which maximum number of support sentences were obtained from ARC dataset are chosen For Manual Analysis.
 
