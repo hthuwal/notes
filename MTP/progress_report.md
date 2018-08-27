@@ -1,5 +1,48 @@
 ## 27th Aug 2018
+#### Manual Analysis
+Some Questions with zero score and for which maximum number of support sentences were obtained from ARC dataset are chosen For Manual Analysis.
 
+1. An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?  
+	- Incorrectly Answered using any combination of corpuses
+	- **Correct Answer**: Planetary days will become shorter.
+	- Some Sentences from corpus: It is evident that **correct answer can be deduced** based on these sentences
+		+ `ARC`: ...**Earth's rotation** was **changed** by the earthquake to the point where the **days** are now 1.8 microseconds **shorter**...
+		+ `ARC`: **changed** the ***earth's rotation**, making the **day** a **bit shorter** than usual  
+		+ `WebChild`: **earth** is the 3rd **planet** from the sun 
+
+2. A bicycle is traveling at 3 meters per second (m/s). The rider applies the brakes and stops the bicycle in 3 seconds. What is the average rate of acceleration of the bicycle during this time?
+	- Numerical Problem: Need to form arithmetic/kinematics equations and do calculations.
+	- Answer **cannot be inferred** from any of the corpus
+
+3. Which is an example of electricity flowing in a circuit to produce sound?
+	- Incorrectly answered using any combination of corpuses
+	- **Correct Answer**: pushing a button to make a doorbell ring
+	- Some Sentences from corpus: **Can be infered**
+		+ `ARC`: ... basic idea behind an **electric** chime **doorbell** ...
+		+ `ARC`: ... beeping trilling **sound** similar to that of a **doorbell** ...
+		+ `WebChild`: ... **doorbell** is a **push button** at an outer door that gives a **ring**ing or buzzing signal when pushed ..
+
+<br>
+
+#### An Observation:
+- Question Wise scores for all these scenarios are updated in the [spreadsheet.](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing). 
+- If NCERT and Web_child datasets are used independently that is without the ARC dataset:
+	+ We answer **14.42%** questions with better scores.
+	+ But when used in conjunction with ARC dataset, the score
+		* stays same for ARC + NCERT
+		* decreases for ARC + WebChild
+- Can we use the other corpus indirectly so that their effects contribute to the final score?
+
+---
+
+- Even using the entire cumulative webchild dataset as corpus seems to only degrade the performance.
+- Why? Use the database differently?
+
+|Corpuses_Used|Accuracy on Challenge Test set|
+|:-----------:|:----------------------------:|
+|ARC|26.41%|
+|WebChildAll|20.44%|
+|ARC+ WebChildAll|26.05%|
 
 #### WebChild Contains several [corpus files](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/)
 
@@ -28,28 +71,6 @@
 	+ [spatial](http://people.mpi-inf.mpg.de/~ntandon/resources/readme-spatial.html)
 		* contains: worda, wordb, list of spatial relations
 		* converted: e.g `spine is around the muscle`, `spine is next to the muscle`, `spine is along the muscle`  
-
-<br>
-
-### An Observation:
-- Question Wise scenarios for all these scenarios are updated in the [spreadsheet.](https://docs.google.com/spreadsheets/d/151zuO4OEE7Z1zyyDnMPC5DXp-aeJ31ROvm_7-edUVa8/edit?usp=sharing). 
-- If NCERT and Web_child datasets are used independently that is without the ARC dataset:
-	+ We answer 14.42% questions with better scores.
-	+ But when used in conjunctio with ARC dataset, the score
-		* stays same for ARC + NCERT
-		* decreases for ARC + WebChild
-- Can we use the other corpus indirectly so that their effects contribute to the final score?
-
----
-
-- Even using the entire cumulative webchild dataset as corpus seems to only degrade the performance.
-- Why? Use the database differently?
-
-|Corpuses_Used|Accuracy on Challenge Test set|
-|:-----------:|:----------------------------:|
-|ARC|26.41%|
-|WebChildAll|20.44%|
-|ARC+ WebChildAll|26.05%|
 
 ----
 
