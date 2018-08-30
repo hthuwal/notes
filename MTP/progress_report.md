@@ -1,6 +1,14 @@
 ##30th Aug 2018
 Can we use or learn from the top models at [The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)?
 
+----
+
+Support Sentences retrieved using the NCERT raw dataset were very small. Some even containing only 1 word!! Therefore tried to consolidate data:
+
+**Consolidate NCERT dataset**: Consolidate all Lines not seperated by blank lines into paragraphs.: *Score 20.98*.
+
+- Why did this decrease? Are all the results below random baseline just **"random"**?
+
 ## 27th Aug 2018
 
 TODO: Go through: A [new relevant paper](https://arxiv.org/abs/1806.00358) that uses ARC dataset.
