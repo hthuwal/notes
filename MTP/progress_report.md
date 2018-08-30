@@ -1,3 +1,6 @@
+##30th Aug 2018
+Can we use or learn from the top models at [The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)?
+
 ## 27th Aug 2018
 
 TODO: Go through: A [new relevant paper](https://arxiv.org/abs/1806.00358) that uses ARC dataset.
