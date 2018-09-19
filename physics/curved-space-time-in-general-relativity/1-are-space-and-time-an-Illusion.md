@@ -12,18 +12,18 @@ Because, two observers moving relative to each other may
 2. Measure different space between things.
 3. Observe same set of events in different chronological order!!      
 
-|Past|Present|Future|
-|:-----:|:-----:|:----:|
-|A   |   B   |  C   |
-|C   |   B   |  A   |
+|Observer|Past|Present|Future|
+|--------|:-----:|:-----:|:----:|
+|Obs 1   |A   |   B   |  C   |
+|Obs 2   |C   |   B   |  A   |
 
 Each observer is measuring properly and is consistent.
 
 This means -> **There is no universal division of events into past, present and future.**  
 
-- Does this means ther is no free will?  
+- Does this mean their is no free will?  
 - Future is fixed can't be changed, because some observer has already experienced it?
-- Is everyones experience of the universe subjective? Is time and space are not part of objective reality (That is universal truth, doesn not change with person to person)?
+- Is everyones experience of the universe subjective? Is time and space are not part of objective reality (That is universal truth, does not change with person to person)?
 
 #### Then what is objective reality?
 
@@ -44,14 +44,14 @@ They'll always agree on the space time interval between the events. That is:
 
 SpaceTime interval can be:
 
-1. **+ve**: Nothing can get from one event to another. Observers who disagree on their chronological order.
-2. **0 or -ve**: Signals/things can go from one event to another. Everyone agrees on their chronological order.
+1. **+ve**: Nothing can get from one event to another. There exist observers who disagree on the chronological order of these events.
+2. **0 or -ve**: Signals/things can go from one event to another. Everyone agrees on the chronological order.
 
 So, space time interval between A and B denotes if A can influence B or not. **Causality**
 
 We don't agree about past, present, future, time or distance but we all agree about causality!.....Whaaaaat?
 
-But doesn't time responsible for causality? No.
+But isn't time responsible for causality? No.
 
 Causality is responsible for our temporal exprience.
 
