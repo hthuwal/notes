@@ -45,17 +45,17 @@
 - **IN** :unamused:
     + Nice try Einstein, But you forgot something.
     + Earth is round. Down is radially inwards not vertically "downwards."
-    + Two objects in a sufficiently large box falling towards the earth will move towards each other even in the frame of reference of the box. They won;t stay put. Therefore it can't be an inertial frame.
+    + Two objects in a sufficiently large box falling towards the earth will move towards each other even in the frame of reference of the box. They won't stay put. Therefore it can't be an inertial frame.
     + Also, from your argument Einstein, orbiting frame of reference are also inertial. But they are accelerating w.r.t to falling frame of reference. But inertial frames of reference can not accelerate w.r.t to each other.
     So, You're wrong. :smirk:
 
 - **AE**  
     + No, that's where you're wrong
     + The **rule that inertial frames can't accelerate relative to each other is true if the world has flat geometry.**
-    + But if the world is non euclidean and curved space-time, straight Lines and constant speed are not what you think they are and inertial Frame can do almost anything they want.
+    + But if the world is non euclidean and curved space-time, straight lines and constant speed are not what you think they are and inertial frame can do almost anything they want.
     + I say **we inhabit a curved space time** and in that space time
         * Orbit of ISS: Constant speed straight line.
-        * Arc of a ball in air: Constant speed straight line.
+        * Arc of a ball thrown in air: Constant speed straight line.
         * But You sitting still: Are accelerating giving you an illusion that there is a force of gravity (pseudo force). 
     + :relieved:
 
