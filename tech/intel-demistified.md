@@ -4,8 +4,8 @@
     + 2 Cores.
     + Hyper-threading.
     + Smaller Cache.
-    + less power, Less Cost.
-    + Generally perform less than i5.
+    + Less Power, Less Cost.
+    + Generally performance is less than i5.
 - Core i5
     + 2 Cores + Hyper-threading.
     + Or 4 Cores + No Hyper-threading.
