@@ -1,0 +1,1 @@
+### Quick/Short info about tech stuff
