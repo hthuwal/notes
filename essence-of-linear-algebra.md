@@ -83,5 +83,23 @@
             [1   0]
             ```
 
+    + Shear Transformation
+        ```
+        [1 1]
+        [0 1]
+        ```
     + If two columns of transfomration vector are linearly dependent
         * The transformation squishes the vector space by 1 dimension.
+
+## Chapter 4 and 5
+
+- Composition of Transformation.
+    - rotation followed by shear
+    - ShearMatrix * (RotationMatrix * Vector)
+    - (ShearMatrix * RotationMatrix) * Vector
+    - **Matrix Multiplication is Composition of Transformation**
+
+- Order of Transformation Matters.
+- (A B) C = A (B C)
+    + Order in which transformations are applied is same for both:
+        * C -> B -> A
