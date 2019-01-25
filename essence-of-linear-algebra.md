@@ -103,3 +103,59 @@
 - (A B) C = A (B C)
     + Order in which transformations are applied is same for both:
         * C -> B -> A
+
+## Chapter 6
+
+- **The factor by which capacity of a given region changes on applying a transformation is called the determinant of the tranformation.**
+
+- Capacity: Volume for 3D space, Area for 2D space
+    
+- Determinant = 0.
+    - Transformation squishes the space into lower dimensional space of capacity zero. 
+    - Implies Area of any region on transformation becomes zero. That  implies tranfromation of the 2D space is a line or point. Transformation squishes vector space. This implies some columns might be linearly dependent.
+
+- Determinant < 0. Implies flipping of the orientation.
+    - 2D speed is flipped.
+    - 3D right hand chirality to left hand chirality or vice versa. 
+
+## Chapter 7
+
+- Solving System of Linear Equation
+    + A **x** = **v**. Solve for x.
+        * Find the original vector which when transformed using transformation matrix A gives **v**.
+    
+    + What if det(A) = 0.
+        * This implies A squishes the space (2D) into lower dimension (line).
+        * If **v** lies on the lower dimensional space (line)  
+            - Multiple Original vectors can transform into **v**.
+            - Infinite Solutions.
+        * If **v** does not lies on the lower dimensional space
+            - No solution.
+
+    + det(A) != 0
+        * Space does not get squished.
+        * There exists a unique vector that becomes **v** on applying A.
+        * Rewinding A transformation is itself a unique transformation called A<sup>-1</sup>.
+        * A<sup>-1</sup> is like undoing A.
+        * So applying trasformation A followed by A<sup>-1</sup> has no affect on a vector.
+        * A A<sup>-1</sup> = I (Identity Transformation)
+            * I dentity Transformation has no effect. Implie **i** and **j** remain where they are.
+        ```
+            [ 1 0 ]
+            [ 0 1 ]            
+        ```
+- Column Space
+    + Transformed vector space.
+    + span of the column of the transformation matrix.
+        * Because they are new **I** and **J** (basis).
+
+- Rank
+    - IF a transformation squishes the vector space to a k-dimensional space.
+        + the rank of the transformation matrix is **k**.
+    - Or it is the number of dimension of the column space.
+
+- If Rank < Full Rank (Number of dimension in input space)
+    + Some Set of vectors must become zero vectors.
+    + 3D spaces changes to 2D plane on Applying A. then there exist a line of vectors in 3D space that gets squished to zero vectors.
+    + 3D spaces changes to 1D lIne on Applying A. then there exist a whole plane of vectors in 3D space that gets squished to zero vectors.
+    + This set of vectors that land on origin are called "Null Space" or "Kernel" of the transformation matrix.
