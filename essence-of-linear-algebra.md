@@ -1,6 +1,6 @@
 # [Videos By 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-## Chapter 2
+## Chapter 2: Linear Combinations, span and bases
 
 - Bases of coordinate system
     + (x, y): coordinates are scalar
@@ -33,16 +33,16 @@
 
 **The basis of a vector space is a set of linearly independent vectors that span the full space**
 
-## Chapter 3
+## Chapter 3: Matrices as linear transformations
 
-- Linear Tranformation
+- Linear Transformation
     + Function: Vector Input , Vector Output
         * Visualize as moving input vector to output vector
         * Visualize as moving vector space (end points) to output vector space (end points).
     + Linear: 
         * All lines(collection of points(end points of vector)) must remain lines.
         * Origin must remain same.
-    + **In a nutshell, keeping gridlines parallel and evenly spaced**
+    + **In a nutshell, keeping grid lines parallel and evenly spaced**
 
 - Linear Transformation of Vector space 
     + Depends only on Linear Transformation of basis vectors.
@@ -88,10 +88,10 @@
         [1 1]
         [0 1]
         ```
-    + If two columns of transfomration vector are linearly dependent
+    + If two columns of transformation vector are linearly dependent
         * The transformation squishes the vector space by 1 dimension.
 
-## Chapter 4 and 5
+## Chapter 4 and 5: Matrix Multiplication as composition and The Determinant
 
 - Composition of Transformation.
     - rotation followed by shear
@@ -104,21 +104,19 @@
     + Order in which transformations are applied is same for both:
         * C -> B -> A
 
-## Chapter 6
-
-- **The factor by which capacity of a given region changes on applying a transformation is called the determinant of the tranformation.**
+- **The factor by which capacity of a given region changes on applying a transformation is called the determinant of the transformation.**
 
 - Capacity: Volume for 3D space, Area for 2D space
     
 - Determinant = 0.
     - Transformation squishes the space into lower dimensional space of capacity zero. 
-    - Implies Area of any region on transformation becomes zero. That  implies tranfromation of the 2D space is a line or point. Transformation squishes vector space. This implies some columns might be linearly dependent.
+    - Implies Area of any region on transformation becomes zero. That  implies transformation of the 2D space is a line or point. Transformation squishes vector space. This implies some columns might be linearly dependent.
 
 - Determinant < 0. Implies flipping of the orientation.
     - 2D speed is flipped.
     - 3D right hand chirality to left hand chirality or vice versa. 
 
-## Chapter 7
+## Chapter 6: Inverse Matrices, column space and null space
 
 - Solving System of Linear Equation
     + A **x** = **v**. Solve for x.
