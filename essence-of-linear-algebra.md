@@ -1,8 +1,8 @@
 # [Videos By 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-## Chapter 2: Linear Combinations, span and bases
+## Chapter 2: Linear Combinations, span and basis
 
-- Bases of coordinate system
+- Basis of coordinate system
     + (x, y): coordinates are scalar
     + What these scalars scale are the basis vectors
         * e.g i-hat and j-hat
