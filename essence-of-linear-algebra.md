@@ -318,3 +318,17 @@
         + Translate the result back to original space.
 
     - Eigenbasis may or may not always exist
+
+## Final
+
+- Space exists without coordinate system.
+- Determinant and Eigenvectors do not depend on the coordinate systems.
+    + They are inherent property of the transformation.
+- Functions are also vectors with infinite coordinates.
+- Linear Transformation of Function: Operators (Derivatives)
+    + Linearity?
+        * Additivity: L(**v** + **w**) = L(**v**) + L(**w**)
+        * Scaling: L(c* **v**) = c * L(**w**)
+- Anything that follows 8 Axioms (properties of vectors) are part of vector spaces.  
+
+    ![](images/vector-space-axioms.png) 
