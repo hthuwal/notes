@@ -259,3 +259,62 @@
                 * **(Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
         + Therefore translated transformation matrix is given by:
             * **Tf<sub>B</sub> = (Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub>**.
+
+## Chapter 10: Eigenvectors and Eigenvalues
+
+- On applying a transformation the span of the most vectors changes (rotated).
+- But span of some special vectors (and their scaled versions) remains unchanged (unrotated, just scaled).
+- **These vectors whose span remains unchanged (unrotated, just scaled) during a transformation are called Eigenvectors of the transformation matrix.**
+- **Eigenvalue of a Eigenvector is the amount by which it gets scaled during the transformation.**
+- E.g Eigenvector of a 3D rotation is the axis of rotation. Eigenvalue will be 1.
+    + Its better to understand rotation in term of axis(Eigenvector) than a transformation matrix(Filled with coordinates).
+
+- **`Tf x v = (λ I) x v`**.
+    + Applying Transformation **Tf** to vector **v** just scales the vector by **λ**. Therefore 
+        + **v** is an eigenvector.
+        + **λ** is an eigenvalue.
+
+- **`(Tf - λI) x v = 0`**
+    + That is the transformation **(Tf - λI)** reduces some non zero vector to zero vector.
+    + Transformation squishes space to lower dimension.
+    + Area of any some regions will becomes zero after transformation.
+    + Therefore **`det(Tf - λI) = 0`**.
+        * Solving this would give you eigenvalues.
+        * To find eigenvector v place λ back in initial equation and solve for v.
+- Their could be no eigenvectors. E.g. Rotation by 90 degrees.
+- Their could be one span of eigenvector with one eigenvalue.
+    + Example: shear to the right side. All the vectors on the x axis are eigenvectors.
++ Their could be multiple span of eigenvectors with one eigenvalue.
+    * Example: scale everything by 2. All vectors are eigenvectors. 
+
+- **EigenBasis**
+    + If the basis of the coordinate system are eigenvectors?
+        * The transformation matrix is the diagonal matrix.
+        * All the basis vector are eigenvectors and the diagonal entries are eigenvalues.
+        ```
+        Example:
+
+        [-5 0 0]
+        [0 -2 0]
+        [0 0 -4]
+
+        i, j, and k are eigenvectors and they are respectively scaled by -5, -2 and -4 (their eigenvalues).
+        ```
+
+    + Diagonal Matrix (D)
+        * Applying Transformation D times
+            - D x D x .... 100 times 
+            - Each D scales the bases vectors therefore applying it 100 times is equivalent to applying D<sup>100</sup> once.
+            - So its easier to apply a transformation multiple times if the transformation is a diagonal matrix or the basis are eigenvectors.
+
+    - What if the basis are not eigenvectors?
+        + Choose two eigenvectors that span entire space.
+        + Translate the transformation to the coordinate system with the eigenvectors as the basis.
+        + The transformation matrix in the resultant space is bound to be diagonal matrix.
+
+    - Say you want to compute M<sup>100</sup>. where M is non diagonal matrix. It would be easier to:
+        + Translate M to eigenbasis.
+        + Compute that raised to the power 100 (Easy because diagonal).
+        + Translate the result back to original space.
+
+    - Eigenbasis may or may not always exist
