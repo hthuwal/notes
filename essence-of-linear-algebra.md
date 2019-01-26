@@ -157,3 +157,32 @@
     + 3D spaces changes to 2D plane on Applying A. then there exist a line of vectors in 3D space that gets squished to zero vectors.
     + 3D spaces changes to 1D lIne on Applying A. then there exist a whole plane of vectors in 3D space that gets squished to zero vectors.
     + This set of vectors that land on origin are called "Null Space" or "Kernel" of the transformation matrix.
+
+## Chapter 7: Dot Products and Duality
+
+- Dot Product of Vectors
+    + Sum of element wise products.
+    + Two vectors **v**, **w**. Then **v . w** is equivalent to `(Length of v) * (Length of projection of w on v)` or `(Length of w) * (Length of projection of v on w)`.
+
+- Duality
+    - Dot Product of vector **v** with vector **w<sup>T</sup>** = Linearly Transforming vector **v** using the transformation matrix **w** (2D -> 1D Transformation) = Projecting **v** on to **w** (line) and scaling it by length of **w**.
+    ```
+    Transformation Matrix: [a b] => Transformation from 2D space to 1D space.
+    i lands on a
+    j lands on b
+
+    Transforming a vector [ c ] using this matrix.
+                          [ d ]
+
+            [a b] x [ c ] = a*c + b*d
+                    [ d ]
+
+    Dot product [ a ] . [ c ] = a*c + b*d
+                [ b ]   [ d ]          
+    ```
+
+- Vector is a form of linear transformation.
+
+- **u** . **w** = 0 => Vectors are perpendicular.
+- **u** . **w** > 0 => Vectors are pointing in same direction.
+- **u** . **w** < 0 => Vectors are pointing in opposite direction.
