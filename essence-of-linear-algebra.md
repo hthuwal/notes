@@ -245,18 +245,23 @@
 
         Note that the final position of our basis vectors is still written in coordinate system A .
     ```
+    
     - If we want to translate this transformation matrix into matrix **Tf<sub>B</sub>** in another coordinate system **B** with **I** and **J** as the basis vector, we need to come up with a matrix that tell us where **I** and **J** should go to written in coordinate system **B** after applying the same transformation.
 
     - E.g.
         + Consider a vector **V<sub>B</sub>**. We want to perform the transformation to it which is given by **Tf<sub>B</sub> x V<sub>B</sub>**.
+
             + Translate  **V<sub>B</sub>** to coordinate system A (explained before)
                 *  **V<sub>A</sub> = Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+            
             + Now perform the transformation using A's transformation matrix.
                 * **Tf<sub>A</sub> x V<sub>A</sub>**.
                 * **Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+            
             + Now Translate it back to the coordinate system B.
                 * **Tr<sub>A-->B</sub> x Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
                 * **(Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+        
         + Therefore translated transformation matrix is given by:
             * **Tf<sub>B</sub> = (Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub>**.
 
@@ -284,6 +289,7 @@
 - Their could be no eigenvectors. E.g. Rotation by 90 degrees.
 - Their could be one span of eigenvector with one eigenvalue.
     + Example: shear to the right side. All the vectors on the x axis are eigenvectors.
+
 + Their could be multiple span of eigenvectors with one eigenvalue.
     * Example: scale everything by 2. All vectors are eigenvectors. 
 
@@ -301,18 +307,21 @@
         i, j, and k are eigenvectors and they are respectively scaled by -5, -2 and -4 (their eigenvalues).
         ```
 
-    + Diagonal Matrix (D)
+    + Diagonal Matrix (D)  
+
         * Applying Transformation D times
             - D x D x .... 100 times 
             - Each D scales the bases vectors therefore applying it 100 times is equivalent to applying D<sup>100</sup> once.
             - So its easier to apply a transformation multiple times if the transformation is a diagonal matrix or the basis are eigenvectors.
 
-    - What if the basis are not eigenvectors?
+    - What if the basis are not eigenvectors?  
+
         + Choose two eigenvectors that span entire space.
         + Translate the transformation to the coordinate system with the eigenvectors as the basis.
         + The transformation matrix in the resultant space is bound to be diagonal matrix.
 
-    - Say you want to compute M<sup>100</sup>. where M is non diagonal matrix. It would be easier to:
+    - Say you want to compute M<sup>100</sup>. where M is non diagonal matrix. It would be easier to:  
+
         + Translate M to eigenbasis.
         + Compute that raised to the power 100 (Easy because diagonal).
         + Translate the result back to original space.
@@ -324,7 +333,7 @@
 - Space exists without coordinate system.
 - Determinant and Eigenvectors do not depend on the coordinate systems.
     + They are inherent property of the transformation.
-- Functions are also vectors with infinite coordinates.
+- Functions are also vectors with infinite coordinates.  
 - Linear Transformation of Function: Operators (Derivatives)
     + Linearity?
         * Additivity: L(**v** + **w**) = L(**v**) + L(**w**)
