@@ -186,3 +186,21 @@
 - **u** . **w** = 0 => Vectors are perpendicular.
 - **u** . **w** > 0 => Vectors are pointing in same direction.
 - **u** . **w** < 0 => Vectors are pointing in opposite direction.
+
+## Chapter 8: Cross Products
+
+- **v** X **w**
+    + A vector with magnitude = area of parallelogram formed by **v** and **w** and perpendicular to the span of **v** and **w**.
+    + `+` Sign indicate: v is to the right of w.
+    + `-` Sign indicate: v is to the left of w.
+    alph
+    ```
+        V = a iota j + c k
+        w = d i + e j + f k
+
+        determinant of the following matrix gives the cross product
+               [ i a d ]
+               [ j b e ]
+               [ k c f ]
+    ```
+
