@@ -204,3 +204,58 @@
                [ k c f ]
     ```
 
+## Chapter 9: Change of Basis
+
+- Translating a vector
+    - My basis vector: **i** , **j**.
+    - Other basis vectors: **I**, **J**.
+        + **I** = x **i** + y **j**
+        + **J** = p **i** + q **j**
+    - Let a **I** + b **J** be a vector in the second coordinate system. How do we represent it in our Coordinate system?
+        ```
+            V = a * I + b * J
+              = a * [ x ] + b * [ p ]
+                    [ y ]       [ q ]
+              = [ a*x + b*p ]
+                [ a*y + b*q ]
+
+            So v in our coordinate system looks like
+            
+            [ x p ] * [ a ]
+            [ y q ]   [ b ]
+
+            i.e a Transformation where our basis vector lands on other basis vectors.
+        ```
+        - Transforming our grid to other grid.
+        - Vector in other language to our language.
+        - To sum up: coordinate system A and B
+            + **The transformation matrix whose columns represent the basis(B) written in coordinate(A) will translate vector written in coordinate(B) to vector in coordinate(A).**
+            + Let's call this matrix **Tr<sub>B->A</sub>** .
+        - If **Tr<sub>B->A</sub>** translates vectors from B --> A and **Tr<sub>A->B</sub>** translates vectors from A --> B. Then
+            + **Tr<sub>A->B</sub>** = **(Tr<sub>B->A</sub>)<sup>-1</sup>**
+- Translating a matrix   
+    ```
+        [ a c ]
+        [ b d ]
+    ```
+    - The above matrix **Tf<sub>A</sub>** depicts a transformation where the basis vectors **i** and **j** of coordinate system **A** are transformed as follows.   
+    ```
+        i --> a i + b j
+        j --> c i + d j
+
+        Note that the final position of our basis vectors is still written in coordinate system A .
+    ```
+    - If we want to translate this transformation matrix into matrix **Tf<sub>B</sub>** in another coordinate system **B** with **I** and **J** as the basis vector, we need to come up with a matrix that tell us where **I** and **J** should go to written in coordinate system **B** after applying the same transformation.
+
+    - E.g.
+        + Consider a vector **V<sub>B</sub>**. We want to perform the transformation to it which is given by **Tf<sub>B</sub> x V<sub>B</sub>**.
+            + Translate  **V<sub>B</sub>** to coordinate system A (explained before)
+                *  **V<sub>A</sub> = Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+            + Now perform the transformation using A's transformation matrix.
+                * **Tf<sub>A</sub> x V<sub>A</sub>**.
+                * **Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+            + Now Translate it back to the coordinate system B.
+                * **Tr<sub>A-->B</sub> x Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+                * **(Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub> x  V<sub>B</sub>**.
+        + Therefore translated transformation matrix is given by:
+            * **Tf<sub>B</sub> = (Tr<sub>B->A</sub>)<sup>-1</sup> x Tf<sub>A</sub> x Tr<sub>B->A</sub>**.
