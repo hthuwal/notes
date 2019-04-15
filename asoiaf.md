@@ -79,7 +79,7 @@ Because all the humans in **Westeros** are descendants of either the First Men, 
 
 - The Valyrian Freehold's slow westward expansion brings it into conflict with the **Rhoynish cities along the great River Rhoyne** (In Essos), a vast waterway.
 - War lasted for about 250 years. Rhoynar lost.
-- **Nymeria a Rhoynish queen** along with women and children on 10000 ships fleed across the narrow see, seeking refuge in Dorne in souther **Westeros**. 
+- **Nymeria a Rhoynish warrior queen** along with women and children on 10000 ships fleed across the narrow see, seeking refuge in Dorne in souther **Westeros**. 
 - **Nymeria married the martell lord and estabished the House Martell of Dorne**
 
 ### Migration of the Targaryens: -126 AC
