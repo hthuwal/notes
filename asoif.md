@@ -9,7 +9,7 @@ The king of the seven kingdoms is referred as:
 
 Because all the humans in **Westeros** are descendants of either the First Men, The Andals or The Rhoynar. Why?
 
-[ASOIF Detailed Timeine](https://awoiaf.**westeros**.org/index.php/Timeline_of_major_events)
+[ASOIAF Detailed Timeine](https://awoiaf.westeros.org/index.php/Timeline_of_major_events)
 
 **Past a certain point, all the dates grow hazy and confused, and the clarity of history becomes the fog of legend.**
 —Hoster Blackwood, to Jaime Lannister
@@ -100,7 +100,7 @@ Because all the humans in **Westeros** are descendants of either the First Men, 
 
 - Later **Karlon Stark** would defeat sea raiders from the east and found the cadet branch **House Karstark**. In the west, the ironborn of the Iron Islands rise to power. This was alongside the Rohynar Migration.
 
-## Targaryen Dynasty: 0-1 AC
+## Targaryen Dynasty: 0-283 AC
 
 -  **Aegon** the Conqueror invades **Westeros** and in two years' time subdues and unites six of the seven kingdoms of **Westeros** under his banner and constructs a new capital city at King's Landing. Dorne remains independent, however. 
 
