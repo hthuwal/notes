@@ -11,7 +11,7 @@ Because all the humans in **Westeros** are descendants of either the First Men, 
 
 [ASOIAF Detailed Timeine](https://awoiaf.westeros.org/index.php/Timeline_of_major_events)
 
-**Past a certain point, all the dates grow hazy and confused, and the clarity of history becomes the fog of legend.**
+**Past a certain point, all the dates grow hazy and confused, and the clarity of history becomes the fog of legend.**  
 —Hoster Blackwood, to Jaime Lannister
 
 ## Dawn Age
