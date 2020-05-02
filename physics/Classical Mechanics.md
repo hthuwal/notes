@@ -31,3 +31,5 @@ A symmetry is an active operation that you can do on the system that does not ch
 
 - Conservation of Linear Momentum is a direct result of translation symmetry (invariance).
 - Conservation of Angular Momentum is a direct result of rotational symmetry (invariance).
+
+![](images/PLA.jpeg)
