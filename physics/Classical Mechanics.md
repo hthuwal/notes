@@ -33,3 +33,11 @@ A symmetry is an active operation that you can do on the system that does not ch
 - Conservation of Angular Momentum is a direct result of rotational symmetry (invariance).
 
 ![](images/PLA.jpeg)
+
+- Energy conservation is a direct result of time translational symmetry (invariance).
+
+- As long as your system is time translational invariant corresponding to PLA there exist a quantity called Hamiltonian (Energy) that is conserved.
+
+- Or Energy is defined as the quantity that is conserved when the system exhibits a time translational symmetry corresponding to PLA.
+
+![](images/hamiltonia-noether.jpeg)
