@@ -42,3 +42,22 @@ Rate of exchange for conversion
 - What dividend income to show if you want DTAA? Since the tax from 1024S is for calendar year?
 - How to divide the divdend income in schedule FA on per vesting basis?
 
+
+### Some Important Links
+
+- [Tax Implications for Indian Residents Investing in the US Stock Market]("https://www.winvesta.in/blog/tax-implications-for-indian-residents-investing-in-us-stock-market/")
+- [What is the W-8BEN Form for Foreigners Investing in US Stocks]("https://www.winvesta.in/blog/what-is-w-8ben-form-foreigners-investing-us-stocks/")
+- [How are Dividends of International or Foreign Stocks taxed? How to show in ITR]("https://www.bemoneyaware.com/blog/dividend-foreign-stocks-tax/")
+- [RSU of MNC, perquisite, tax , Capital gains, ITR]("https://www.bemoneyaware.com/blog/rsu-tax-perquisite-capital-gains/")
+- [Foreign Income and Taxes - Blog by Quicko]("https://blog.quicko.com/foreign-income-and-taxes")
+- [Reporting of Foreign Assets &amp; Income in Income Tax Return]("https://taxguru.in/income-tax/reporting-foreign-assets-income-income-tax-return.html")
+- [Reporting rsu and espp in schedule fa - fy 2018-19 - Income Tax | ITR]("https://www.caclubindia.com/forum/reporting-rsu-and-espp-in-schedule-fa-fy-2018-19-520636.asp")
+- [InstructionITR2_2015_ENG.pdf]("https://www.incometaxindia.gov.in/Supporting%20Files/2015/InstructionITR2_2015_ENG.pdf")
+- [Employee Stock Purchase Plan or ESPP]("https://www.bemoneyaware.com/blog/employee-stock-purchase-plan-or-espp/")
+- [Are ESPP,ESOP in MNC Foreign Assets or Not?]("https://www.bemoneyaware.com/blog/are-espp-esop-in-mnc-to-be-filed-in-itr-as-foreign-assets/")
+- [How to fill Schedule FA (AY20-21)]("https://www.taxfull.com/16898/how-to-fill-schedule-fa-ay20-21")
+- [Forex Card Rates 2021 – Maneesh K. Singh &amp; Co.]("https://mksco.in/forex-card-rates-2021/")
+- [Financial Benchmarks India Pvt Ltd]("https://www.fbil.org.in/#/home")
+- [Getting ESOP as salary package? Know about ESOP Taxation]("https://cleartax.in/s/taxation-on-esop-rsu-stock-options")
+- [Resident Indians Holding U.S. Stocks Should Disclose Details in Indian ITR]("https://cleartax.in/s/resident-indians-should-disclose-us-stocks-in-itr")- 
+
