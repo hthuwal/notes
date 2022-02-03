@@ -51,7 +51,9 @@ Parent A
 Parent B
 ```
 
-### Golang
+## Golang
+
+#### Code
 
 ```go
 package main
@@ -103,7 +105,7 @@ Parent A
 Parent B
 ```
 
-### Java
+## Java
 
 #### Code
 
@@ -157,4 +159,43 @@ class Ideone
 ```
 Parent A
 Child B
+```
+
+## Python
+
+#### Code
+
+```python
+class Base:
+    def A(self):
+        print("Base: A")
+        self.B()
+    
+    def B(self):
+        print("Base: B")
+
+class Derived(Base):
+    def B(self):
+        print("Dervived: B")
+
+def main():
+    # b = Base()
+    # b.B()
+    # b.A()
+
+    # print("\n")
+
+    d = Derived()
+    # d.B()
+    d.A()
+
+if __name__ == "__main__":
+    main()
+```
+
+#### Output
+
+```
+Base: A
+Dervived: B
 ```
