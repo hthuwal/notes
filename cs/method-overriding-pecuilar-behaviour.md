@@ -4,7 +4,54 @@
 - Child class extends Parent and overrides B.
 - When we call child.A() which B() method would be called by A? Parent's or child class?
 
-## C++
+## C++ (Virtual base class methods)
+
+#### Code
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Parent {
+public:
+	virtual void A() {
+		cout<<"Parent A"<<"\n";
+		B();
+	}
+	virtual void B() {
+		cout<<"Parent B"<<"\n";
+	}
+};
+
+class Child: public Parent {
+public:
+	void B() {
+		cout<<"Child B"<<"\n";
+	}
+};
+
+int main() {
+	// Parent p;
+	// p.B();
+	// p.A();
+	
+	// cout<<"\n";
+	
+	Child c;
+	// c.B();
+	c.A();
+	return 0;
+}
+```
+
+#### Output
+
+```
+Parent A
+Child B
+```
+
+## C++ (No virtual functions)
 
 #### Code
 
